@@ -7,23 +7,21 @@ import Lightbox from "react-images";
 import "./App.css";
 import NavBar from "./components/navbar";
 import LandingPage from "./components/landing_page";
-// import Work from './components/work';
 import About from "./components/about";
 import Skills from "./components/skills";
 import Videod from "./components/videod";
 import Footer from "./components/footer";
 
 // mobiili osa
-const getBrowserWidth = function() {
+const getBrowserWidth = function () {
   if (window.innerWidth > 991) {
-    // Small Device
     return "desktop";
   }
 };
 
 const device = getBrowserWidth();
 
-// galerii osa
+// galerii osa start
 const photos = [
   {
     src: "https://failid.joonasnilp.ee/esilehepildid_edit/1.jpg",
@@ -103,6 +101,9 @@ class App extends Component {
       currentImage: this.state.currentImage + 1
     });
   }
+// galerii osa end
+
+// lehe struktuur
   render() {
     if (device === "desktop") {
       return (
@@ -110,9 +111,8 @@ class App extends Component {
           <NavBar />
           <LandingPage />
           <section id="work">
-          <hr />
+            <hr />
             <h3>Fotod</h3>
-            
             <div>
               <Gallery photos={photos} onClick={this.openLightbox} />
               <Lightbox
@@ -124,9 +124,9 @@ class App extends Component {
                 isOpen={this.state.lightboxIsOpen}
                 imageCountSeparator={" / "}
                 backdropClosesModal={true}
-                leftArrowTitle={"Liigu vasakule (vasak nool)"}
-                rightArrowTitle={"Liigu paremale (parem nool)"}
-                closeButtonTitle={"Sulge galerii (Esc)"}
+                leftArrowTitle={"Liigu vasakule"}
+                rightArrowTitle={"Liigu paremale"}
+                closeButtonTitle={"Sulge galerii"}
               />
             </div>
           </section>
@@ -140,7 +140,6 @@ class App extends Component {
       return (
         <div>
           <NavBar />
-          <LandingPage />
           <section id="work">
             <div>
               <Gallery photos={photos} onClick={this.openLightbox} />
@@ -153,9 +152,9 @@ class App extends Component {
                 isOpen={this.state.lightboxIsOpen}
                 imageCountSeparator={" / "}
                 backdropClosesModal={true}
-                leftArrowTitle={"Liigu vasakule (vasak nool)"}
-                rightArrowTitle={"Liigu paremale (parem nool)"}
-                closeButtonTitle={"Sulge galerii (Esc)"}
+                leftArrowTitle={"Liigu vasakule"}
+                rightArrowTitle={"Liigu paremale"}
+                closeButtonTitle={"Sulge galerii"}
               />
             </div>
           </section>

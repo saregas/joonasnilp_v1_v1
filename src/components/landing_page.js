@@ -3,7 +3,7 @@ import video1 from "../assets/videod/insta_m.mp4";
 
 export default props => {
     return (
-      <div className="video-container">
+      <div id="algus" className="video-container">
         <video autoPlay loop muted>
           <source src={video1} type="video/mp4" />
         </video>

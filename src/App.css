@@ -132,18 +132,14 @@ hr.sub {
 }
 
 .text-faded {
-
   font-size: 1.35rem;
 }
 
 .card-image > img {
   width: 100%;
-  height: 320px;
 }
 
-.card .card-content {
-  padding: 2%;
-}
+
 
 .row .col.card {
   padding: 0px 4px;
@@ -156,10 +152,7 @@ hr.sub {
   font-weight: bold;
 }
 
-.card-title.card-open {
-  color: #607d8b;
-  font-weight: bold;
-}
+
 
 .btn,
 .btn:focus {
@@ -216,27 +209,6 @@ p.text-faded {
   align-items: center;
   margin: 3% auto;
 }
-
-.cssLogo.col.s3 {
-  width: 19%;
-  margin-right: 6%;
-}
-
-.oopLogo.col.s3 {
-  margin-top: 5%;
-}
-
-.apiLogo.col.s3 {
-  width: 20%;
-  margin-right: 5%;
-}
-
-.reduxLogo.col.s3 {
-  width: 22%;
-  margin-bottom: 3%;
-}
-
-
 
 .input-field .prefix,
 .input-field input,
@@ -374,7 +346,3 @@ video {
   text-align: center;
 }
 
-button:focus {
-    outline: none;
-    background-color: #2ab7a9;
-}

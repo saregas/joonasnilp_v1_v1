@@ -7,7 +7,6 @@ export default props => {
     <section id="videod">
     <hr />
       <h3>Videod</h3>
-      
       <div className="container">
             < div class = "row" >
               <div class="col s12 l4">

@@ -79,9 +79,7 @@ export default class NavBar extends Component {
         <nav>
           <div ref={this.setWrapperRef} className="nav-wrapper container">
             < a className = "nav-text-name center brand-logo"
-            href = {
-              null
-            }
+              href="#algus"
             >
               Joonas Nilp
             </a>
@@ -138,9 +136,7 @@ export default class NavBar extends Component {
         <nav>
           <div className="nav-wrapper container">
             < a className = "nav-text-name"
-            href = {
-              null
-            }
+              href="#algus"
             role = "button" >
               Joonas Nilp
             </a>
