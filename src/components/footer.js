@@ -6,8 +6,7 @@ import youtubeLogo from "../assets/images/footer/youtube.svg";
 
 export default props => {
   return (
-    < section id="footer"
-      className="footer" >
+    <section id="footer" className="footer">
       <div className="container">
         <div className="row">
           <div className="col s12">

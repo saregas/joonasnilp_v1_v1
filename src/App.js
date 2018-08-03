@@ -13,7 +13,7 @@ import Videod from "./components/videod";
 import Footer from "./components/footer";
 
 // mobiili osa
-const getBrowserWidth = function () {
+const getBrowserWidth = function() {
   if (window.innerWidth > 991) {
     return "desktop";
   }

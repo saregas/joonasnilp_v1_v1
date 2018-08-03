@@ -1,14 +1,11 @@
-import React from 'react';
+import React from "react";
 
 export default props => {
-    return (
-        <section id='work'>
-            <h3>Fotod</h3>
-            <hr />
-            <div className="row">
-                {cardList}
-            </div>
-        </section>
-    );
-}
-
+  return (
+    <section id="work">
+      <h3>Fotod</h3>
+      <hr />
+      <div className="row">{cardList}</div>
+    </section>
+  );
+};
