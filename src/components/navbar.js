@@ -78,11 +78,7 @@ export default class NavBar extends Component {
       navbar = (
         <nav>
           <div ref={this.setWrapperRef} className="nav-wrapper container">
-            < a className = "nav-text-name center brand-logo"
-              href="#algus"
-            >
-              Joonas Nilp
-            </a>
+            <a className="nav-text-name center brand-logo" href="#algus">Joonas Nilp</a>
             <a className="button-collapse" onClick={this.openNav}>
               <i className="material-icons">menu</i>
             </a>
@@ -101,7 +97,7 @@ export default class NavBar extends Component {
                   <i
                     className={`${
                       closeHover ? "white-color" : "black-color"
-                    } material-icons left sideNavClose`}
+                      } material-icons left sideNavClose`}
                   >
                     close
                   </i>
@@ -135,11 +131,7 @@ export default class NavBar extends Component {
       navbar = (
         <nav>
           <div className="nav-wrapper container">
-            < a className = "nav-text-name"
-              href="#algus"
-            role = "button" >
-              Joonas Nilp
-            </a>
+            <a className="nav-text-name" href="#algus" role="button" >Joonas Nilp</a>
             <ul className="right hide-on-sm-and-down">
               <li>
                 <a className="nav-text" href="#work">

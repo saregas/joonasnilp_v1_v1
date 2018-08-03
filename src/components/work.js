@@ -1,15 +1,13 @@
 import React from 'react';
 
-export default props=>{
-    
-    return(
+export default props => {
+    return (
         <section id='work'>
             <h3>Fotod</h3>
-            <hr/>
+            <hr />
             <div className="row">
-            {cardList}
+                {cardList}
             </div>
-            
         </section>
     );
 }

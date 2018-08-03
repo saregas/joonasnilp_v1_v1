@@ -12,11 +12,9 @@ export default props => {
                 <div className="row">
                     <div className="col s12 m4">
                         <div className="background-text text-faded">
-
-
                             <div className="card">
                                 <div className="card-image">
-                                    <img src={loodus1} alt="Loodus"  />
+                                    <img src={loodus1} alt="Loodus" />
                                     <span className="card-title">Loodusfotod</span>
                                 </div>
                                 <div className="card-content">
@@ -24,17 +22,15 @@ export default props => {
                                 </div>
                                 <div className="card-action">
                                     <a class="waves-effect waves-light btn modal-trigger tooltipped" data-position="right" data-tooltip="Avaneb uues aknas" href="#modal1">Vaata galeriid</a>
-                             
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                     <div className="col s12 m4">
                         <div className="background-text text-faded">
                             <div className="card">
                                 <div className="card-image">
-                                    <img src={droon1} alt="Loodus"  />
+                                    <img src={droon1} alt="Loodus" />
                                     <span className="card-title">Droonifotod</span>
                                 </div>
                                 <div className="card-content">
@@ -50,7 +46,7 @@ export default props => {
                         <div className="background-text text-faded">
                             <div className="card">
                                 <div className="card-image">
-                                    <img src={uritus1} alt="Loodus"  />
+                                    <img src={uritus1} alt="Loodus" />
                                     <span className="card-title">Üritused</span>
                                 </div>
                                 <div className="card-content">

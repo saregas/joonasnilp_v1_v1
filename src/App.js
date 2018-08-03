@@ -101,9 +101,9 @@ class App extends Component {
       currentImage: this.state.currentImage + 1
     });
   }
-// galerii osa end
+  // galerii osa end
 
-// lehe struktuur
+  // lehe struktuur
   render() {
     if (device === "desktop") {
       return (

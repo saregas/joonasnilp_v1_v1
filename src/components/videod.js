@@ -5,26 +5,26 @@ import React from "react";
 export default props => {
   return (
     <section id="videod">
-    <hr />
+      <hr />
       <h3>Videod</h3>
       <div className="container">
-            < div class = "row" >
-              <div class="col s12 l4">
-                <div class="video-container">
-                  <iframe width="560" height="315" title="Video" src="https://www.youtube.com/embed/5TYzFQmlwc8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col s12 l4">
-                <div class="video-container">
-                  <iframe width="560" height="315" title="Video" src="https://www.youtube.com/embed/_BRzipBJx2I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="col s12 l4">
-                <div class="video-container">
-                  <iframe width="560" height="315" title="Video" src="https://www.youtube.com/embed/c-K5T9Q5wfs?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-              </div>
+        <div className="row" >
+          <div className="col s12 l4">
+            <div className="video-container">
+              <iframe width="560" height="315" title="Video" src="https://www.youtube.com/embed/5TYzFQmlwc8?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
+          </div>
+          <div className="col s12 l4">
+            <div className="video-container">
+              <iframe width="560" height="315" title="Video" src="https://www.youtube.com/embed/_BRzipBJx2I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div className="col s12 l4">
+            <div className="video-container">
+              <iframe width="560" height="315" title="Video" src="https://www.youtube.com/embed/c-K5T9Q5wfs?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

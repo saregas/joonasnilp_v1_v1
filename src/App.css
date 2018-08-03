@@ -62,7 +62,7 @@ nav {
   outline-color: white;
 }
 
-.side-nav li > a:hover {
+.side-nav li>a:hover {
   background-color: #607d8b;
 }
 
@@ -89,7 +89,7 @@ nav {
   padding-right: 0;
 }
 
-.button-collapse > .material-icons {
+.button-collapse>.material-icons {
   color: black;
   margin: 0;
 }
@@ -99,7 +99,7 @@ nav .button-collapse {
   cursor: pointer;
 }
 
-.landing-img > img {
+.landing-img>img {
   width: 100%;
 }
 
@@ -135,11 +135,9 @@ hr.sub {
   font-size: 1.35rem;
 }
 
-.card-image > img {
+.card-image>img {
   width: 100%;
 }
-
-
 
 .row .col.card {
   padding: 0px 4px;
@@ -151,8 +149,6 @@ hr.sub {
 .card .card-title {
   font-weight: bold;
 }
-
-
 
 .btn,
 .btn:focus {
@@ -199,7 +195,7 @@ p.text-faded {
   margin-bottom: 5%;
 }
 
-.skills > img {
+.skills>img {
   width: 50%;
 }
 
@@ -220,14 +216,14 @@ p.text-faded {
   color: #607d8b;
 }
 
-.input-field > input[type="text"]:focus + label {
+.input-field>input[type="text"]:focus+label {
   color: #607d8b;
 }
 
-.input-field > input[type="text"]#icon_prefix:focus,
-.input-field > input[type="email"]#icon_email:focus,
-.input-field > input[type="text"]#icon_prefix2:focus,
-.input-field > textarea[type="text"]#textArea1:focus {
+.input-field>input[type="text"]#icon_prefix:focus,
+.input-field>input[type="email"]#icon_email:focus,
+.input-field>input[type="text"]#icon_prefix2:focus,
+.input-field>textarea[type="text"]#textArea1:focus {
   border-bottom: 1px solid #607d8b;
   box-shadow: 0 1px 0 0 #607d8b;
 }
@@ -241,7 +237,7 @@ p.text-faded.contact.dark {
   color: black;
 }
 
-form > .row {
+form>.row {
   margin-bottom: 0.5%;
 }
 
@@ -267,7 +263,6 @@ form > .row {
   margin-top: 5%;
 }
 
-
 .footer-links {
   display: inline-block;
   text-align: center;
@@ -285,12 +280,12 @@ form > .row {
 }
 
 .footer-links .material-icons,
-.footer-links > a {
+.footer-links>a {
   color: #000;
   font-weight: 500;
 }
 
-.footer-links > a:hover {
+.footer-links>a:hover {
   text-decoration: underline;
 }
 
@@ -327,6 +322,7 @@ video {
   top: 0px;
   z-index: -1;
 }
+
 .overlay-desc {
   background: rgba(0, 0, 0, 0);
   position: absolute;
@@ -345,4 +341,3 @@ video {
   font-size: 9vw;
   text-align: center;
 }
-
