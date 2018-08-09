@@ -1,4 +1,11 @@
 import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
+  Redirect
+} from "react-router-dom";
 import "../node_modules/materialize-css/dist/css/materialize.min.css";
 import "../node_modules/materialize-css/dist/js/materialize.min.js";
 import "../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
@@ -6,9 +13,9 @@ import Gallery from "react-photo-gallery";
 import Lightbox from "react-images";
 import "./App.css";
 import NavBar from "./components/navbar";
-import LandingPage from "./components/landing_page";
-import About from "./components/about";
-import Skills from "./components/skills";
+import LandingPage from "./components/start_leht";
+import About from "./components/minust";
+import Skills from "./components/oskused";
 import Videod from "./components/videod";
 import Footer from "./components/footer";
 
@@ -107,62 +114,66 @@ class App extends Component {
   render() {
     if (device === "desktop") {
       return (
-        <div>
-          <NavBar />
-          <LandingPage />
-          <section id="work">
-            <hr />
-            <h3>Fotod</h3>
-            <div>
-              <Gallery photos={photos} onClick={this.openLightbox} />
-              <Lightbox
-                images={photos}
-                onClose={this.closeLightbox}
-                onClickPrev={this.gotoPrevious}
-                onClickNext={this.gotoNext}
-                currentImage={this.state.currentImage}
-                isOpen={this.state.lightboxIsOpen}
-                imageCountSeparator={" / "}
-                backdropClosesModal={true}
-                leftArrowTitle={"Liigu vasakule"}
-                rightArrowTitle={"Liigu paremale"}
-                closeButtonTitle={"Sulge galerii"}
-              />
-            </div>
-          </section>
-          <About />
-          <Skills />
-          <Videod />
-          <Footer />
-        </div>
+        <Router>
+          <div className="App">
+            <NavBar />
+            <LandingPage />
+            <section id="work">
+              <hr />
+              <h3>Fotod</h3>
+              <div>
+                <Gallery photos={photos} onClick={this.openLightbox} />
+                <Lightbox
+                  images={photos}
+                  onClose={this.closeLightbox}
+                  onClickPrev={this.gotoPrevious}
+                  onClickNext={this.gotoNext}
+                  currentImage={this.state.currentImage}
+                  isOpen={this.state.lightboxIsOpen}
+                  imageCountSeparator={" / "}
+                  backdropClosesModal={true}
+                  leftArrowTitle={"Liigu vasakule"}
+                  rightArrowTitle={"Liigu paremale"}
+                  closeButtonTitle={"Sulge galerii"}
+                />
+              </div>
+            </section>
+            <About />
+            <Skills />
+            <Videod />
+            <Footer />
+          </div>
+        </Router>
       );
     } else {
       return (
-        <div>
-          <NavBar />
-          <section id="work">
-            <div>
-              <Gallery photos={photos} onClick={this.openLightbox} />
-              <Lightbox
-                images={photos}
-                onClose={this.closeLightbox}
-                onClickPrev={this.gotoPrevious}
-                onClickNext={this.gotoNext}
-                currentImage={this.state.currentImage}
-                isOpen={this.state.lightboxIsOpen}
-                imageCountSeparator={" / "}
-                backdropClosesModal={true}
-                leftArrowTitle={"Liigu vasakule"}
-                rightArrowTitle={"Liigu paremale"}
-                closeButtonTitle={"Sulge galerii"}
-              />
-            </div>
-          </section>
-          <About />
-          <Skills />
-          <Videod />
-          <Footer />
-        </div>
+        <Router>
+          <div className="App">
+            <NavBar />
+            <section id="work">
+              <div>
+                <Gallery photos={photos} onClick={this.openLightbox} />
+                <Lightbox
+                  images={photos}
+                  onClose={this.closeLightbox}
+                  onClickPrev={this.gotoPrevious}
+                  onClickNext={this.gotoNext}
+                  currentImage={this.state.currentImage}
+                  isOpen={this.state.lightboxIsOpen}
+                  imageCountSeparator={" / "}
+                  backdropClosesModal={true}
+                  leftArrowTitle={"Liigu vasakule"}
+                  rightArrowTitle={"Liigu paremale"}
+                  closeButtonTitle={"Sulge galerii"}
+                />
+              </div>
+            </section>
+            <About />
+            <Skills />
+            <Videod />
+            <Footer />
+          </div>
+        </Router>
       );
     }
   }

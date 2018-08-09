@@ -15,9 +15,9 @@ export default props => {
                 height="315"
                 title="Video"
                 src="https://www.youtube.com/embed/5TYzFQmlwc8?rel=0&amp;showinfo=0"
-                frameborder="0"
+                frameBorder="0"
                 allow="autoplay; encrypted-media"
-                allowfullscreen
+                allowFullScreen
               />
             </div>
           </div>
@@ -28,9 +28,9 @@ export default props => {
                 height="315"
                 title="Video"
                 src="https://www.youtube.com/embed/_BRzipBJx2I?rel=0&amp;showinfo=0"
-                frameborder="0"
+                frameBorder="0"
                 allow="autoplay; encrypted-media"
-                allowfullscreen
+                allowFullScreen
               />
             </div>
           </div>
@@ -41,9 +41,9 @@ export default props => {
                 height="315"
                 title="Video"
                 src="https://www.youtube.com/embed/c-K5T9Q5wfs?rel=0&amp;showinfo=0"
-                frameborder="0"
+                frameBorder="0"
                 allow="autoplay; encrypted-media"
-                allowfullscreen
+                allowFullScreen
               />
             </div>
           </div>

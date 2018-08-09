@@ -7,7 +7,7 @@ export default props => {
       <div className="container">
         <hr className="white-color" />
         <h3 className="white-color">Kes ma olen?</h3>
-        <div className="row valign-wrapper">
+        <div className="row">
           <div className="minuPilt">
             <img
               src={minuPilt}
@@ -16,11 +16,11 @@ export default props => {
             />
           </div>
         </div>
-        <div className="row valign-wrapper">
+        {/* <div className="row valign-wrapper">
           <div className="">
-            {/* <p className='text-faded'>Täiendamisel</p> */}
+            <p className='text-faded'>Täiendamisel</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
